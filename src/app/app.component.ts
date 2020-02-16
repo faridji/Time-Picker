@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { TimePickerComponent } from './time-picker/picker';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'time-picker';
+
+  constructor(private dialog: MatDialog)
+  {
+
+  }
+
+  openTimePicker()
+  {
+    this.dialog.open(TimePickerComponent, {
+      backdropClass: 'none',
+      panelClass: 'custom-dialog-no-padding'
+    });
+  }
 }

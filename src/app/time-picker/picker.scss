@@ -1,0 +1,43 @@
+:host
+    ::ng-deep.mat-dialog-container
+    {
+        padding: 0 !important;
+    }
+
+
+.time-container
+{
+    position: relative;
+    padding: 2px;
+
+    ::ng-deep.mat-form-field-wrapper
+    {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+.time-format-section
+{
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.time
+{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider
+{
+    margin-bottom: 20px;
+}
+
+.AM-PM
+{
+    margin-left: 10px;
+    height: 135px;
+    align-items: center;
+}
